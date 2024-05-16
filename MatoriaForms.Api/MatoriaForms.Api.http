@@ -1,0 +1,6 @@
+@MatoriaForms.Api_HostAddress = https://localhost:7285
+
+GET {{MatoriaForms.Api_HostAddress}}/api/captcha/get
+Accept: application/json
+
+###
