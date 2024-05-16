@@ -19,7 +19,7 @@ public class CaptchaController(ICaptcha captcha, IHttpContextAccessor httpContex
     // GET: api/captcha/get-image
     [HttpGet("{captchaId}")]
     [ActionName("get-image")]
-    public ActionResult<CaptchaResponse> GetImage(string captchaId) {
+    public ActionResult GetImage(string captchaId) {
         var info = captcha.Generate(captchaId);
         var stream = new MemoryStream(info.Bytes);
 
