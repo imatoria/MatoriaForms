@@ -5,7 +5,7 @@ using System.Text;
 namespace MatoriaForms.Api.Controllers;
 [ApiController]
 [Route("api/[controller]/[action]")]
-public class CaptchaController(ICaptcha captcha, IHttpContextAccessor httpContextAccessor) : ControllerBase {
+public class CaptchaController(ICaptcha captcha) : ControllerBase {
 
     public readonly string SessionSuffix = "Simple";
 

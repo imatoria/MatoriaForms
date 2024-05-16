@@ -3,7 +3,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 //builder.Services.AddSession();
-builder.Services.AddHttpContextAccessor();
 builder.Services.AddCaptcha(builder.Configuration);
 
 builder.Services.AddControllers();
